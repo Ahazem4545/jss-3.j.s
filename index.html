@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="bookmark-icon-4.png">
+</head>
+<body>
+<div class="d-flex justify-content-center align-content-center py-2"><h1 class="  py-5 position-relative text-center">Bookmarker</h1></div> 
+
+
+<div class="container d-flex justify-content-center py-4 border-dots">
+  
+<h4>
+      <i class="fa-solid fa-bookmark"></i>
+    Bookmark your favorite sites
+<i class="fa-solid fa-bookmark"></i>
+</h4>
+
+</div>
+<div class="container fw-bolder pb-3">
+       
+       <label class="py-2" for="BookmarkName"> <i class="fa-solid fa-book-bookmark px-2 "></i>Site Name</label> 
+       <div class="input-group mb-3">
+        <input type="text" id="BookmarkName" placeholder="Bookmark Name" name="BookmarkName" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" >
+        </div>
+       <label class="py-2" for="SiteUrl"> <i class="fa-solid fa-link px-2 "></i>Site URL</label> 
+       <div class="input-group mb-3">
+        <input type="url" id="SiteUrl" placeholder="Website URL" name="Site URL" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" >
+        </div>
+        <div class="container text-center ">  <button onclick="addSite()" type="button" class="btn btn-danger px-5 my-2 buttonsubmit">submit</button></div>
+</div>
+
+
+<div class="container text-center">
+    <div class="container py-3 border-dots"></div>
+    <table class="table">
+        <thead class="table-light ">
+         <tr>
+            <th> Index</th>
+            <th> Website Name</th>
+            <th> Visit</th>
+            <th> Delete</th>
+               
+         </tr>
+        </thead>
+        <tbody id="tBody">
+           
+        
+        </tbody>
+      </table>
+
+
+      <a href="SiteUrl.value" id="visitItem"></a>
+
+</div>
+
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
